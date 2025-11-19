@@ -1,10 +1,64 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
 ---
 
 <BaseLayout title="Home" bodyClass="home-page">
 	<main>
-		<h1>Welcome to Sterling Commercial Solutions</h1>
-		<p>Your trusted partner for top-notch cleaning services.</p>
+		<!-- Hero Section -->
+		<section class="hero">
+			<div class="hero-overlay"></div>
+			<div class="hero-content">
+				<div class="hero-branding">
+					<BrushCleaning size={64} class="hero-logo" />
+					<h1 class="business-branding-bold hero-title">
+						Sterling Commercial Solutions
+					</h1>
+				</div>
+
+				<p class="hero-subtitle">
+					Your trusted partner for professional industrial cleaning services
+				</p>
+
+				<!-- Why Choose Us -->
+				<div class="why-choose-us">
+					<h2 class="heading-text">Why Choose Us?</h2>
+					<div class="features-grid">
+						<div class="feature-item">
+							<CheckCircle size={24} class="feature-icon" />
+							<h3 class="body-text-bold">Professional Excellence</h3>
+							<p class="body-text">
+								Industry-leading standards with certified technicians
+							</p>
+						</div>
+						<div class="feature-item">
+							<CheckCircle size={24} class="feature-icon" />
+							<h3 class="body-text-bold">Reliable Service</h3>
+							<p class="body-text">
+								On-time, every time with flexible scheduling
+							</p>
+						</div>
+						<div class="feature-item">
+							<CheckCircle size={24} class="feature-icon" />
+							<h3 class="body-text-bold">Eco-Friendly Solutions</h3>
+							<p class="body-text">
+								Safe, sustainable cleaning products and methods
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Call to Action -->
+				<div class="hero-cta">
+					<a href="#contact" class="cta-button cta-primary">
+						<Phone size={20} />
+						Get a Free Quote
+					</a>
+					<a href="#services" class="cta-button cta-secondary">
+						Our Services
+					</a>
+				</div>
+			</div>
+		</section>
 	</main>
 </BaseLayout>
