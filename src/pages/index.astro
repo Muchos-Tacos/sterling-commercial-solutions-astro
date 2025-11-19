@@ -1,6 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
+import {
+	CheckCircle,
+	Phone,
+	BrushCleaning,
+	Award,
+	Clock,
+	Shield,
+	Sparkles,
+	Droplets,
+	Wind,
+	Building2,
+	Layers,
+} from '@lucide/astro';
 ---
 
 <BaseLayout title="Home" bodyClass="home-page">
@@ -17,7 +29,8 @@ import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
 				</div>
 
 				<p class="hero-subtitle">
-					Your trusted partner for professional industrial cleaning services
+					Your trusted partner for professional industrial cleaning
+					services
 				</p>
 
 				<!-- Why Choose Us -->
@@ -26,9 +39,12 @@ import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
 					<div class="features-grid">
 						<div class="feature-item">
 							<CheckCircle size={24} class="feature-icon" />
-							<h3 class="body-text-bold">Professional Excellence</h3>
+							<h3 class="body-text-bold">
+								Professional Excellence
+							</h3>
 							<p class="body-text">
-								Industry-leading standards with certified technicians
+								Industry-leading standards with certified
+								technicians
 							</p>
 						</div>
 						<div class="feature-item">
@@ -40,7 +56,9 @@ import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
 						</div>
 						<div class="feature-item">
 							<CheckCircle size={24} class="feature-icon" />
-							<h3 class="body-text-bold">Eco-Friendly Solutions</h3>
+							<h3 class="body-text-bold">
+								Eco-Friendly Solutions
+							</h3>
 							<p class="body-text">
 								Safe, sustainable cleaning products and methods
 							</p>
@@ -57,6 +75,169 @@ import { CheckCircle, Phone, BrushCleaning } from '@lucide/astro';
 					<a href="#services" class="cta-button cta-secondary">
 						Our Services
 					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- What Sets Us Apart Section -->
+		<section class="sets-apart">
+			<div class="sets-apart-container">
+				<h2 class="heading-text sets-apart-title">
+					What Sets Us Apart
+				</h2>
+				<p class="sets-apart-subtitle body-text">
+					Not just another cleaning company
+				</p>
+
+				<div class="sets-apart-grid">
+					<div class="apart-card">
+						<div class="apart-icon-wrapper">
+							<Award size={40} class="apart-icon" />
+						</div>
+						<h3 class="body-text-bold apart-card-title">
+							Industry Expertise
+						</h3>
+						<p class="body-text apart-card-description">
+							Over 15 years of specialized experience in
+							commercial and industrial cleaning with certified
+							professionals
+						</p>
+					</div>
+
+					<div class="apart-card">
+						<div class="apart-icon-wrapper">
+							<Clock size={40} class="apart-icon" />
+						</div>
+						<h3 class="body-text-bold apart-card-title">
+							24/7 Availability
+						</h3>
+						<p class="body-text apart-card-description">
+							Round-the-clock service to fit your schedule without
+							disrupting your business operations
+						</p>
+					</div>
+
+					<div class="apart-card">
+						<div class="apart-icon-wrapper">
+							<Shield size={40} class="apart-icon" />
+						</div>
+						<h3 class="body-text-bold apart-card-title">
+							Fully Insured
+						</h3>
+						<p class="body-text apart-card-description">
+							Comprehensive insurance coverage and bonded staff
+							for your complete peace of mind
+						</p>
+					</div>
+
+					<div class="apart-card">
+						<div class="apart-icon-wrapper">
+							<Sparkles size={40} class="apart-icon" />
+						</div>
+						<h3 class="body-text-bold apart-card-title">
+							Quality Guarantee
+						</h3>
+						<p class="body-text apart-card-description">
+							100% satisfaction guarantee with detailed quality
+							inspections after every service
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Core Services Section -->
+		<section class="core-services" id="services">
+			<div class="core-services-container">
+				<h2 class="heading-text core-services-title">Our Core Services</h2>
+				<p class="core-services-subtitle body-text">
+					Professional cleaning solutions tailored to your industry needs
+				</p>
+
+				<div class="services-grid">
+					<div class="service-card">
+						<div
+							class="service-image"
+							style="background-image: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=800&auto=format&fit=crop');"
+						>
+							<div class="service-overlay"></div>
+							<div class="service-icon-wrapper">
+								<Layers size={32} class="service-icon" />
+							</div>
+						</div>
+						<div class="service-content">
+							<h3 class="body-text-bold service-title">
+								Hardfloor Maintenance
+							</h3>
+							<p class="body-text service-description">
+								Expert care for tile, vinyl, concrete, and hardwood surfaces
+								with specialized cleaning and sealing
+							</p>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div
+							class="service-image"
+							style="background-image: url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=800&auto=format&fit=crop');"
+						>
+							<div class="service-overlay"></div>
+							<div class="service-icon-wrapper">
+								<Wind size={32} class="service-icon" />
+							</div>
+						</div>
+						<div class="service-content">
+							<h3 class="body-text-bold service-title">
+								Carpet & Upholstery
+							</h3>
+							<p class="body-text service-description">
+								Deep steam cleaning and stain removal for carpets, rugs, and
+								fabric furniture
+							</p>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div
+							class="service-image"
+							style="background-image: url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop');"
+						>
+							<div class="service-overlay"></div>
+							<div class="service-icon-wrapper">
+								<Droplets size={32} class="service-icon" />
+							</div>
+						</div>
+						<div class="service-content">
+							<h3 class="body-text-bold service-title">
+								Window Cleaning
+							</h3>
+							<p class="body-text service-description">
+								Streak-free interior and exterior window cleaning for
+								buildings of any height
+							</p>
+						</div>
+					</div>
+
+					<div class="service-card">
+						<div
+							class="service-image"
+							style="background-image: url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop');"
+						>
+							<div class="service-overlay"></div>
+							<div class="service-icon-wrapper">
+								<Building2 size={32} class="service-icon" />
+							</div>
+						</div>
+						<div class="service-content">
+							<h3 class="body-text-bold service-title">
+								Industrial Deep Clean
+							</h3>
+							<p class="body-text service-description">
+								Heavy-duty cleaning for warehouses, factories, and commercial
+								facilities
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
