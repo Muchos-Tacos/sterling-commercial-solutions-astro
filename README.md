@@ -11,7 +11,7 @@ Short static website built with Astro. Simple company landing page showcasing St
 
 ## Prerequisites
 
--   Node.js 16.14+ (Node 18+ recommended)
+-   Node.js 18.20.0 or higher (Node 20+ recommended)
 -   npm, yarn, or pnpm
 -   Git (for cloning and deployment)
 
@@ -19,7 +19,8 @@ Short static website built with Astro. Simple company landing page showcasing St
 
 1. Clone repository
     ```
-    git clone <repo-url> .
+    git clone https://github.com/gema-ap/sterling-commercial-solutions-astro.git
+    cd sterling-commercial-solutions-astro
     ```
 2. Install dependencies
     ```
@@ -33,7 +34,7 @@ Short static website built with Astro. Simple company landing page showcasing St
     ```
     npm run dev
     ```
-    Visit http://localhost:3000 (or port shown by Astro).
+    Visit http://localhost:4321 (or port shown in terminal).
 
 ## Project structure
 
@@ -43,8 +44,8 @@ Short static website built with Astro. Simple company landing page showcasing St
 -   src/
     -   pages/ — routes and page templates (index.astro)
     -   components/ — UI components (Hero, Services, Footer)
-    -   layouts/ — shared layouts
-    -   styles/ — global CSS or Tailwind config
+    -   layouts/ — shared layouts (BaseLayout.astro)
+    -   styles/ — global CSS (main.css)
 
 ## Development commands
 
@@ -67,8 +68,7 @@ Example package.json scripts
 "scripts": {
   "dev": "astro dev",
   "build": "astro build",
-  "preview": "astro preview",
-  "format": "prettier --write ."
+  "preview": "astro preview"
 }
 ```
 
@@ -92,7 +92,7 @@ Example package.json scripts
 -   Vercel: connect repo, automatic build (Astro supported).
 -   Netlify: set build command `npm run build`, publish directory `dist`.
 -   GitHub Pages: push `dist` to gh-pages branch or use an action to deploy.
--   CI: ensure Node version matches local dev and run install → build → deploy.
+-   CI: ensure Node 18.20.0+ is configured, then run install → build → deploy.
 
 ## Content & customization
 
@@ -109,5 +109,5 @@ Example package.json scripts
 ## Contributing
 
 -   Create a branch per feature.
--   Run format and lint before committing.
+-   Test changes locally with `npm run dev` and `npm run build`.
 -   Open a pull request with a brief description and screenshots if applicable.

@@ -18,7 +18,15 @@ const { title = '' } = Astro.props;
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{title}</title>
+		<meta name="description" content="Sterling Commercial Solutions provides professional industrial cleaning services for commercial facilities. Trusted partner for top-notch cleaning and sanitation solutions." />
+		<title>{title ? `${title} | Sterling Commercial Solutions` : 'Sterling Commercial Solutions - Industrial Cleaning Services'}</title>
+
+		<!-- Open Graph / Social Media -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title ? `${title} | Sterling Commercial Solutions` : 'Sterling Commercial Solutions - Industrial Cleaning Services'} />
+		<meta property="og:description" content="Professional industrial cleaning services for commercial facilities. Your trusted partner for top-notch cleaning solutions." />
+		<meta property="og:site_name" content="Sterling Commercial Solutions" />
+
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -39,7 +47,7 @@ const { title = '' } = Astro.props;
 			</nav>
 			<span class="header-menu">
 				<button class="header-button body-text-bold">Book Now!</button>
-				<Menu size={32} style="cursor: pointer;" id="menu-icon" />
+				<Menu size={32} style="cursor: pointer;" id="menu-icon" aria-label="Toggle mobile menu" />
 			</span>
 		</header>
 
@@ -94,10 +102,10 @@ const { title = '' } = Astro.props;
 				<div class="socials">
 					<h5 class="heading-text">Follow us on social media</h5>
 					<div class="social-icons">
-						<Facebook style="cursor: pointer;" />
-						<Instagram style="cursor: pointer;" />
-						<Twitter style="cursor: pointer;" />
-						<Youtube style="cursor: pointer;" />
+						<Facebook style="cursor: pointer;" aria-label="Visit our Facebook page" />
+						<Instagram style="cursor: pointer;" aria-label="Visit our Instagram page" />
+						<Twitter style="cursor: pointer;" aria-label="Visit our Twitter page" />
+						<Youtube style="cursor: pointer;" aria-label="Visit our YouTube channel" />
 					</div>
 				</div>
 			</div>

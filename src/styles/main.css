@@ -9,11 +9,11 @@
 	--primary-text-color: var(--lake-mist);
 	--secondary-color: var(--mountain-blue);
 	--accent-color: var(--warm-copper);
-	--highlight-color: var(--sterling-silver)
+	--highlight-color: var(--sterling-silver);
 	--background-color: var(--lake-mist);
 	--text-color: #333;
 
-	--primary-font: 'Monsterrat', sans-serif;
+	--primary-font: 'Montserrat', sans-serif;
     --secondary-font: 'Source Sans 3', sans-serif;
     --accent-font: 'Lora', serif;
 }
@@ -230,7 +230,7 @@ body {
 }
 
 .footer-col h4 {
-	color: var(--secondary);
+	color: var(--primary-text-color);
 	margin-bottom: 1rem;
 	font-size: 1.1rem;
 }
@@ -242,7 +242,7 @@ body {
 }
 
 .footer-col ul li a {
-	color: var(--secondary);
+	color: var(--primary-text-color);
 	text-decoration: none;
 	display: block;
 	margin: 0.35rem 0;
